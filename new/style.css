@@ -1,0 +1,93 @@
+body {
+    background-color: #ff97fc;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100dvh;
+    gap: 20px;
+    position: relative;
+    margin: 0;
+}
+#background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 200px;
+}
+
+button {
+    padding: 30px 50px;
+    background: #9e0e9c;
+    border: none;   
+    /*text font*/
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#circle {
+    width: 40px;
+    height: 40px;
+    background-color: #9e0e9c;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Smooth transition for position changes */
+    transition: transform 0.5s ease-in-out; 
+}
+
+#board {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border: 2px dashed #9e0e9c;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+  transition: transform 0.5s ease-in-out; 
+}
+
+#heart::before, #heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: red;
+}
+
+#heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+video{
+    position: absolute;
+}
