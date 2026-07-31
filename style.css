@@ -33,10 +33,12 @@ h1 {
 }
 #subtitle{
     margin-top: 400px;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
 }
-#cuties{
-    margin-right: 1200px;
-    margin-bottom: 200px;
+#fatties{
+    margin-left: 950px;
+    margin-top: 500px;
     letter-spacing: 1px;
 }
 
@@ -102,7 +104,7 @@ img{
     border: 10px solid #2c2101;
 }
 #hoppip{
-    top:40px;
+    top:20px;
     right:200px;
     transform: rotate(-15deg);
 }
@@ -111,27 +113,36 @@ img{
     left: 200px;
 }
 #ayce{
-    right: 290px;
-    bottom: 80px;
+    right: 360px;
+    bottom: 130px;
     transform: rotate(-20deg);
     z-index: 0;
 }
 #cheesecake{
-    right: 180px;
-    bottom: 100px;
+    right: 270px;
+    bottom: 160px;
     z-index: 1;
+    transform: rotate(-10deg);
 }
+
 #hamster{
-    right: 60px;
-    bottom: 75px;
-    transform: rotate(20deg);
+    right: 150px;
+    bottom: 155px;
+    transform: rotate(10deg);
     z-index: 2;
+}
+#pastry{
+    right: 30px;
+    bottom: 120px;
+    z-index: 3;
+    transform: rotate(20deg);
 }
 #car{
     left: 50px;
-    top: 55px;
+    top: 110px;
 }
 #grad{
     left: 300px;
-    top: 135px;
+    top: 110px;
 }
+
