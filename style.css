@@ -8,86 +8,130 @@ body {
     justify-content: center;
     text-align: center;
     height: 100dvh;
-    gap: 20px;
     position: relative;
     margin: 0;
+    overflow: hidden;
 }
+
 #background{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: absolute;
 }
 
 h1 {
     font-size: 2rem;
     letter-spacing: 2px;
+    color: #660556;
+    position: absolute;
+}
+#title{
+    margin-bottom: 350px;
+}
+#subtitle{
+    margin-top: 400px;
+}
+#cuties{
+    margin-right: 1200px;
     margin-bottom: 200px;
+    letter-spacing: 1px;
 }
 
-button {
-    padding: 30px 50px;
-    background: #9e0e9c;
-    border: none;   
-    /*text font*/
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
+
+/* Reverted to original crisp heart proportions */
+.arc-heart {
+    position: absolute;
+    width: 30px;
+    height: 24px;
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation: arcAnimation 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-#circle {
-    width: 40px;
-    height: 40px;
-    background-color: #9e0e9c;
-    border-radius: 50%;
+.arc-heart::before,
+.arc-heart::after {
+    content: "";
     position: absolute;
     top: 0;
+    width: 15px;
+    height: 24px;
+    border-radius: 15px 15px 0 0;
+    background: #9e0e9c;
+}
+
+.arc-heart::before {
+    left: 15px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.arc-heart::after {
     left: 0;
-    /* Smooth transition for position changes */
-    transition: transform 0.5s ease-in-out; 
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
 }
 
-#board {
-    position: relative;
-    width: 400px;
-    height: 300px;
-    border: 2px dashed #9e0e9c;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
-#heart {
-  position: relative;
-  width: 100px;
-  height: 90px;
-  margin-top: 10px;
-  transition: transform 0.5s ease-in-out; 
-}
-
-#heart::before, #heart::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 52px;
-  height: 80px;
-  border-radius: 50px 50px 0 0;
-  background: red;
-}
-
-#heart::before {
-  left: 50px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-
-#heart::after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+/* Scaled up the animation multiplier instead! */
+@keyframes arcAnimation {
+    0% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        /* Increased end scale to 2.5 for large, crisp hearts */
+        transform: translate(-50%, -50%) translate(var(--x-end), var(--y-end)) scale(2.5) rotate(var(--rot));
+        opacity: 0;
+    }
 }
 
 video{
     position: absolute;
+}
+img{
+    z-index: 2;
+    position: absolute;
+}
+.real{
+    border: 10px solid #2c2101;
+}
+#hoppip{
+    top:40px;
+    right:200px;
+    transform: rotate(-15deg);
+}
+#melody{
+    bottom: 60px;
+    left: 200px;
+}
+#ayce{
+    right: 290px;
+    bottom: 80px;
+    transform: rotate(-20deg);
+    z-index: 0;
+}
+#cheesecake{
+    right: 180px;
+    bottom: 100px;
+    z-index: 1;
+}
+#hamster{
+    right: 60px;
+    bottom: 75px;
+    transform: rotate(20deg);
+    z-index: 2;
+}
+#car{
+    left: 50px;
+    top: 55px;
+}
+#grad{
+    left: 300px;
+    top: 135px;
 }
