@@ -43,7 +43,9 @@ h1 {
 }
 
 
-/* Reverted to original crisp heart proportions */
+/* 
+    All hearts
+*/
 .arc-heart {
     position: absolute;
     width: 30px;
@@ -96,6 +98,9 @@ h1 {
 video{
     position: absolute;
 }
+/*
+    All images
+*/
 img{
     z-index: 2;
     position: absolute;
