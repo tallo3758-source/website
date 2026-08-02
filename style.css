@@ -160,85 +160,86 @@ body.is-mobile {
 }
 /* Adjust heading sizes and margins so they don't overlap */
 body.is-mobile #title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 220px;
 }
 
 body.is-mobile #subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 250px;
 }
 
 body.is-mobile video {
     position: absolute;
     font-size: 1.1rem;
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
 
 body.is-mobile #fatties {
     /* Bring #fatties in from the far right (desktop had 950px margin) */
-    margin-left: -20px;
-    margin-bottom: -220px;
+    margin-left: -30px;
+    margin-bottom: -80px;
     font-size: 1rem;
 }
 
 /* Adjust image positions and sizes for small viewports */
 body.is-mobile #hoppip {
-    top: 20px;
-    right: 50px;
-    width: 175px;
-    height: 175px;
+    top: 40px;
+    right: 0px;
+    width: 150px;
+    height: 150px;
 }
 
 body.is-mobile #melody {
-    top: 10px;
-    left: 50px;
+    top: 20px;
+    left: 25px;
     width: 90px;
     height: 173px;
 }
 
 body.is-mobile #car {
-    left: 50px;
-    top: 200px;
-    width: 140px;
-    height: 105px;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    width: 120px;
+    height: 90px;
 }
 
 body.is-mobile #grad {
-    left: 210px;
-    top: 200px;
-    width: 140px;
-    height: 105px;
+    left: 150px;
+    top: 20px;
+    width: 120px;
+    height: 90px;
 }
 
 /* Pull the bottom overlapping photos closer together */
 body.is-mobile #ayce {
-    left: 20px;
-    bottom: 70px;
-    width: 140px;
-    height: 105px;
+    left: 50px;
+    bottom: 40px;
+    width: 120px;
+    height: 90px;
 }
 
 body.is-mobile #cheesecake {
-    left: 100px;
-    bottom: 85px;
-    width: 105px;
-    height: 140px;
+    left: 130px;
+    bottom: 55px;
+    width: 90px;
+    height: 120px;
 }
 
 body.is-mobile #hamster {
-    right: 105px;
-    bottom: 80px;
-    width: 105px;
-    height: 140px;
+    right: 140px;
+    bottom: 50px;
+    width: 90px;
+    height: 120px;
 }
 
 body.is-mobile #pastry {
-    right: 25px;
-    bottom: 60px;
-    width: 140px;
-    height: 105px;
+    right: 60px;
+    bottom: 30px;
+    width: 120px;
+    height: 90px;
 }
 
