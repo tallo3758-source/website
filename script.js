@@ -3,7 +3,7 @@ const video = document.getElementById('myVideo')
 const isMobile = window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 768;
 
 if (isMobile) {
-    setTimeout(spawnHeartFromVideo, 30 * 40);
+    document.body.classList.add('is-mobile');
 }
 video.addEventListener('play', (e) => {
     for (let i = 0; i < 20; i++) {
