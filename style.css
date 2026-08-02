@@ -153,22 +153,31 @@ img{
 /* ==========================================
    Mobile-Specific Layout Overrides
    ========================================== */
-
 /* Stack background content nicely on small screens */
 body.is-mobile {
     overflow-y: auto; /* Allows scrolling if content spills over */
 }
-
 /* Adjust heading sizes and margins so they don't overlap */
 body.is-mobile #title {
     font-size: 1.4rem;
     margin-bottom: 280px;
+    margin-right: 300px;
 }
 
 body.is-mobile #subtitle {
     font-size: 1.1rem;
     margin-top: 320px;
+    margin-right: 300px;
 }
+
+body.is-mobile video {
+    font-size: 1.1rem;
+    margin-top: 320px;
+    margin-right: 300px;
+    width: 15%;
+    height: auto;
+}
+
 
 body.is-mobile #fatties {
     /* Bring #fatties in from the far right (desktop had 950px margin) */

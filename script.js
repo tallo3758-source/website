@@ -5,6 +5,9 @@ const isMobile = window.matchMedia("(pointer: coarse)").matches || window.innerW
 if (isMobile) {
     document.body.classList.add('is-mobile');
 }
+else{
+    document.body.classList.add('is-mobile');
+}
 video.addEventListener('play', (e) => {
     for (let i = 0; i < 20; i++) {
         setTimeout(spawnHeartFromVideo, i * 40); // Staggered release
