@@ -104,6 +104,7 @@ video{
 img{
     z-index: 2;
     position: absolute;
+    box-sizing: border-box;
 }
 .real{
     border: 10px solid #2c2101;
@@ -160,87 +161,84 @@ body.is-mobile {
 /* Adjust heading sizes and margins so they don't overlap */
 body.is-mobile #title {
     font-size: 1.4rem;
-    margin-bottom: 280px;
-    margin-right: 300px;
+    margin-bottom: 220px;
 }
 
 body.is-mobile #subtitle {
     font-size: 1.1rem;
-    margin-top: 320px;
-    margin-right: 300px;
+    margin-top: 250px;
 }
 
 body.is-mobile video {
+    position: absolute;
     font-size: 1.1rem;
-    margin-top: 320px;
-    margin-right: 300px;
-    width: 15%;
+    width: 60%;
     height: auto;
 }
 
 
 body.is-mobile #fatties {
     /* Bring #fatties in from the far right (desktop had 950px margin) */
-    margin-left: 0;
-    margin-top: 380px;
-    font-size: 1.2rem;
+    margin-left: -20px;
+    margin-bottom: -220px;
+    font-size: 1rem;
 }
 
 /* Adjust image positions and sizes for small viewports */
 body.is-mobile #hoppip {
-    top: 10px;
-    right: 10px;
-    width: 150px;
-    height: 150px;
+    top: 20px;
+    right: 50px;
+    width: 175px;
+    height: 175px;
 }
 
 body.is-mobile #melody {
-    bottom: 20px;
-    left: 10px;
-    width: 100px;
-    height: 182px;
+    top: 10px;
+    left: 50px;
+    width: 90px;
+    height: 173px;
 }
 
 body.is-mobile #car {
-    left: 10px;
-    top: 10px;
-    width: 120px;
-    height: 90px;
+    left: 50px;
+    top: 200px;
+    width: 140px;
+    height: 105px;
 }
 
 body.is-mobile #grad {
-    left: 140px;
-    top: 10px;
-    width: 120px;
-    height: 90px;
+    left: 210px;
+    top: 200px;
+    width: 140px;
+    height: 105px;
 }
 
 /* Pull the bottom overlapping photos closer together */
 body.is-mobile #ayce {
-    right: 150px;
-    bottom: 30px;
-    width: 100px;
-    height: 75px;
+    left: 20px;
+    bottom: 70px;
+    width: 140px;
+    height: 105px;
 }
 
 body.is-mobile #cheesecake {
-    right: 110px;
-    bottom: 40px;
-    width: 80px;
-    height: 106px;
+    left: 100px;
+    bottom: 85px;
+    width: 105px;
+    height: 140px;
 }
 
 body.is-mobile #hamster {
-    right: 60px;
-    bottom: 40px;
-    width: 80px;
-    height: 106px;
+    right: 105px;
+    bottom: 80px;
+    width: 105px;
+    height: 140px;
 }
 
 body.is-mobile #pastry {
-    right: 10px;
-    bottom: 30px;
-    width: 100px;
-    height: 75px;
+    right: 25px;
+    bottom: 60px;
+    width: 140px;
+    height: 105px;
 }
 
